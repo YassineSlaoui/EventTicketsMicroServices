@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: et-eureka-server
+    config:
+        import: "optional:configserver:"
+    cloud:
+        config:
+            uri: http://localhost:8888
+            name: et-eureka-server

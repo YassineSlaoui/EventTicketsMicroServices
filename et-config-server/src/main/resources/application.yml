@@ -1,0 +1,17 @@
+server:
+    port: 8888
+
+spring:
+    application:
+        name: et-config-server
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/YassineSlaoui/Config-Repo-for-Event-Tickets.git
+                    clone-on-start: true
+                    #                    username: ${GIT_USERNAME}
+                    #                    password: ${GIT_PASSWORD}
+                    search-paths: '{application}'
+        compatibility-verifier:
+            enabled: false

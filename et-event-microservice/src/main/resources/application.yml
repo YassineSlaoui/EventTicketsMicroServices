@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: et-event-microservice
+    config:
+        import: "optional:configserver:"
+    cloud:
+        config:
+            uri: http://localhost:8888
+            name: et-event-microservice
